@@ -16,7 +16,7 @@ img {
 /* Typography */
 
 h1 {
-    color: #434343 ;
+    color: RGB(51, 55, 64) ;
     font-size: 3.2rem;
 }
 
@@ -25,6 +25,10 @@ h2 {
     font-size: 1.8rem;
 }
 
+h3 {
+    color: RGB(51, 55, 64);
+    font-size: 1.6rem;
+}
 
 /* Home Layout */
 .container-home {
@@ -72,9 +76,7 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
-
-/* Results Page Layout */
-
+/* Results Page Layout: Artists and Albums */
 .container-results {
     min-height: 100vh;
     text-align: center;
@@ -109,9 +111,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #434343;
+    background-color: RGB(77, 77, 77);
     padding: 1em 0.5em;
- 
 }
 
 .name {
@@ -138,6 +139,43 @@ a {
 a:hover, a:focus {
     background-color: #FA2600;
 }   
+
+/* Results Tracks */
+
+.tracks {
+    width: 60vw;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: RGB(246, 246, 246);
+    margin-bottom: 0.2rem;
+}
+
+.track > * {
+    margin: 1rem;
+}
+
+.headline {
+    width: 100%;
+    margin: auto;
+    background-color: #4a4a4a;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headline--margin {
+    margin-right: 10rem;
+}
+
+
 
 
 

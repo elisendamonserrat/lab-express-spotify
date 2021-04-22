@@ -1,0 +1,18 @@
+<div class="container-results">
+    <h1>Albums for: {{artistName}}</h1>
+    <div class="results">
+        {{#each albumsArray}}
+        <div class="artist">
+            {{#if this.images}}
+                <img src="{{this.images.0.url}}" alt="{{this.name}}">
+            {{else}}
+                <img src="/images/no-album-cover.png" alt="{{this.name}}">
+            {{/if}}
+                <div class="artist-details">
+                 <h2 class="name">{{this.name}}</h2>
+                 <a class="button" href="/tracks/{{this.id}}">View tracks</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

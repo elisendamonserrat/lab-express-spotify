@@ -40,9 +40,8 @@ app.get('/artist-search', (req, res) => {
     .searchArtists(artist)
     .then(data => {
       const artistArray = data.body.artists.items;
-
       console.log('The received data from the API: ', artistArray);
-      res.render('artist-search-results', { artistArray });
+      res.render('artist-search-results', { artistArray, artist });
     })
     .catch(err => console.log('The error while searching artists occurred: ', err));
 });

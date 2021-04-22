@@ -1,3 +1,5 @@
+/* Globals */
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -7,21 +9,22 @@ html {
     font-size: 62.5%;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Typography */
 
 h1 {
-    color: white;
-    font-size: 4;
+    color: #434343 ;
+    font-size: 3.2rem;
 }
 
 h2 {
     color: white;
-    font-size: 3.2;
+    font-size: 1.8rem;
 }
 
-a {
-    color: tomato;
-}
 
 /* Home Layout */
 .container-home {
@@ -74,11 +77,67 @@ a {
 
 .container-results {
     min-height: 100vh;
-    display: grid;
+    text-align: center;
     place-items: center;
-    background-color: black;
-    
+    background-color: white;   
+    margin: 5rem auto; 
 }
+
+.results {
+    display:flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.results > .artist {
+    flex: 1 1 20em;
+}
+
+.artist {
+    text-align: center;
+    margin: 3rem;
+}
+
+.artist > img {
+    width: 100%;
+    height: 70%;
+    object-fit:cover;
+}
+
+.artist-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    padding: 1em 0.5em;
+ 
+}
+
+.name {
+    color: white;
+}
+
+.button {
+    margin: 0.6em;
+    padding: 0.2em 0.8em;
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow:
+     rgba(252, 146, 146, 0.09) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+a:hover, a:focus {
+    background-color: #FA2600;
+}   
 
 
 
